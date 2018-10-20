@@ -2,7 +2,7 @@
 
 
 ### Project Overview
-> To develop an application that shows users the nearest operating hospitals or clinic and redirect users to Google Maps when select a location. The application also provides a user registration and authentication system using user's Facebook account.
+> To develop an application that shows users the nearest operating hospitals or clinic and redirect users to Google Maps (in progress) when select a location. The application also provides a user registration and authentication system using user's Facebook account.
 
 ### How to Run?
 
