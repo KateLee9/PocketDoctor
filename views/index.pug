@@ -1,0 +1,50 @@
+doctype html
+html(lang='en')
+    head
+        title Login Page
+        meta(charset='utf-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1')
+
+        //link(rel='stylesheet', type='text/css', href='style.css')
+        link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css')
+
+        script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js')
+        script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js')
+        style.
+            #header{
+                background-color: white;
+            }
+            #content{
+                height: 100px
+            }
+            h1 {
+                color: blue;
+            }
+    body
+        .container-fluid
+            #header.jumbotron
+                h1.text-center Pocket Doctor
+                p.text-center Welcome to your 24/7 medical assistant!
+        #content.row
+            .col-md-2(style='background-color:white;')
+            .col-md-4(style='background-color:lightblue;')
+                h3.text-center Login
+                .form-group
+                    label(for='usr') Name:
+                    input#usr.form-control(type='text')
+                .form-group
+                    label(for='pwd') Password:
+                    input#pwd.form-control(type='password')
+                .float-right
+                    input.btn.btn-info.btn-block(type='submit', value='Submit')
+                h1
+            .col-md-1(style='background-color:white;')
+            .col-md-3(style='background-color:lightblue;')
+                //can't load css yet need to fix
+                h1
+                .login-box
+                    //authentication needs to happen here
+                    a.btn.btn-default(href='/passport/facebook') Facebook
+                    span Connect with Facebook
+                h1
+            .col-md-2(style='background-color:white;')
