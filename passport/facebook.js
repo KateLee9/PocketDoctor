@@ -1,13 +1,12 @@
 var passport = require('passport');
 var FacebookStrategy = require('passport-facebook');
 
+//hook on sequelize
 const Sequelize = require('sequelize');
 const sequelize = new Sequelize('PocketDoctor','root', null, {
     dialect: 'mysql',
 });
 const User = require('../models/user')(sequelize, Sequelize);
-
-// const User = require('../database');
 
 var config = require('../_config');
 var init = require('./init');
@@ -15,7 +14,7 @@ var init = require('./init');
 passport.use(new FacebookStrategy({
         clientID: 1900216703426978,
         clientSecret: 'f2c2ee6069de323109cb9347fad01026',
-        callbackURL: "localhost:3000/passport/facebook/callback"
+        callbackURL: "http://localhost:3000/passport/facebook/callback"
     },
     function (accessToken, refreshToken, profile, cb,done) {
 

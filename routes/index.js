@@ -3,6 +3,7 @@
 var express = require('express'); //requiring our Express functionality,
 var router = express.Router(); //attaching a "router" variable to Express's router method
 var passportFacebook = require('../passport/facebook');
+var passportGoogle = require('../passport/google');
 const userController = require('../controllers').user;
 
 /* GET home page. */
@@ -27,6 +28,16 @@ router.get('/passport/facebook/callback',
     passportFacebook.authenticate('facebook', { successRedirect: '/', failureRedirect: '/login' }),
     function(req, res) {
         // Successful authentication
+        res.json(req.user);
+    });
+
+/* Google Authentication */
+router.get('/passport/google', passportGoogle.authenticate('google'));
+
+router.get('/passport/google/callback',
+    passportGoogle.authenticate('google', {failureRedirect: '/login'}),
+    function(req,res){
+    //successful authentication
         res.json(req.user);
     });
 
