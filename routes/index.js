@@ -24,10 +24,10 @@ router.get('/login', function(req, res, next) {
 router.get('/passport/facebook', passportFacebook.authenticate('facebook'));
 
 router.get('/passport/facebook/callback',
-    passportFacebook.authenticate('facebook', { failureRedirect: '/login' }),
+    passportFacebook.authenticate('facebook', { successRedirect: '/', failureRedirect: '/login' }),
     function(req, res) {
         // Successful authentication
-        res.redirect('/login');
+        res.json(req.user);
     });
 
 //API class with Express
