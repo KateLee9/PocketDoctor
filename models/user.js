@@ -7,6 +7,7 @@ module.exports = (sequelize, DataTypes) => {
         email: DataTypes.STRING,
         provider: DataTypes.STRING,
         facebook: DataTypes.STRING,
+        google: DataTypes.STRING,
   }, {
   });
   user.associate = function(models) {

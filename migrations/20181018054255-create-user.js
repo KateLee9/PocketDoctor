@@ -8,18 +8,6 @@ module.exports = {
         primaryKey: true,
         type: Sequelize.INTEGER
       },
-      // firstName: {
-      //   type: Sequelize.STRING
-      // },
-      // lastName: {
-      //     type: Sequelize.STRING
-      // },
-      // email: {
-      //     type: Sequelize.STRING
-      // },
-      // password: {
-      //     type: Sequelize.STRING
-      // },
         name: {
             type: Sequelize.STRING
         },
@@ -34,6 +22,9 @@ module.exports = {
         },
         facebook:{
             type: Sequelize.STRING
+        },
+        google:{
+          type: Sequelize.STRING
         },
       createdAt: {
         allowNull: false,

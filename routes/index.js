@@ -32,13 +32,13 @@ router.get('/passport/facebook/callback',
     });
 
 /* Google Authentication */
-router.get('/passport/google', passportGoogle.authenticate('google'));
+router.get('/passport/google', passportGoogle.authenticate('google', { scope: ['profile'] }));
 
 router.get('/passport/google/callback',
     passportGoogle.authenticate('google', {failureRedirect: '/login'}),
     function(req,res){
     //successful authentication
-        res.json(req.user);
+        res.redirect('/');
     });
 
 //API class with Express

@@ -1,5 +1,5 @@
 var passport = require('passport');
-var GoogleStrategy = require('passport-google');
+var GoogleStrategy = require('passport-google-oauth20').Strategy;
 
 //hook on sequelize
 const Sequelize = require('sequelize');
@@ -11,8 +11,8 @@ const User = require('../models/user')(sequelize, Sequelize);
 var init = require('./init');
 
 passport.use(new GoogleStrategy({
-        clientID: '457775293201-vj7cpa95fb6jpfvgjf5q469qa99ve9f6.apps.googleusercontent.com',
-        clientSecret: 'cRxdWvl2sIqiJnh-H3ocWHZs',
+        clientID: '457775293201-62fd8e06f3lb7b2i8j7fd5l9jbsb8gj5.apps.googleusercontent.com',
+        clientSecret: 'xnV04pIcX3DvLoiXQPCFZOcL',
         callbackURL: "http://localhost:3000/passport/google/callback"
     },
 
@@ -28,6 +28,7 @@ passport.use(new GoogleStrategy({
 
 ));
 
+//serialize user into the session
 init();
 
 module.exports = passport;

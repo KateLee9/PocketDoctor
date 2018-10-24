@@ -10,6 +10,8 @@ html(lang='en')
 
         script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js')
         script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js')
+        script(src='https://apis.google.com/js/platform.js', async='', defer='')
+
         style.
             #header{
                 background-color: white;
@@ -45,6 +47,6 @@ html(lang='en')
                 .login-box
                     //authentication needs to happen here
                     a.btn.btn-default(href='/passport/google') Facebook
-                    span Connect with Facebook
+                    .g-signin2(data-onsuccess='onSignIn')
                 h1
             .col-md-2(style='background-color:white;')
