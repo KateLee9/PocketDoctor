@@ -40,7 +40,6 @@ passport.use(new FacebookStrategy({
         //             provider: 'facebook',
         //             //now in the future searching on User.findOne({'facebook.id': profile.id } will match because of this next line
         //             facebook: profile._json
-    //     //No user wa
         //         });
         //         user.save(function (err) {
         //             if (err) console.log(err);
