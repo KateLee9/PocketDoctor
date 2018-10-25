@@ -4,7 +4,7 @@ var express = require('express'); //requiring our Express functionality,
 var router = express.Router(); //attaching a "router" variable to Express's router method
 var passportFacebook = require('../passport/facebook');
 var passportGoogle = require('../passport/google');
-const userController = require('../controllers').user;
+// const userController = require('/extraCSS/controllers').user;
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
