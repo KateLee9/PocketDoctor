@@ -14,7 +14,7 @@ var init = require('./init');
 passport.use(new FacebookStrategy({
         clientID: 1900216703426978,
         clientSecret: 'f2c2ee6069de323109cb9347fad01026',
-        callbackURL: "http://localhost:3000/passport/facebook/callback"
+        callbackURL: "https://kate-pocketdoctor.herokuapp.com/passport/facebook/callback"
     },
     function (accessToken, refreshToken, profile, cb,done) {
 

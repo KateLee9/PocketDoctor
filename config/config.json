@@ -23,6 +23,6 @@
   "facebook": {
     "app_id": ":1900216703426978",
     "app_secret":"f2c2ee6069de323109cb9347fad01026",
-    "callbackURL":"https://localhost:3000/passport/facebook/callback"
+    "callbackURL":"https://kate-pocketdoctor.herokuapp.com/passport/facebook/callback"
   }
 }
