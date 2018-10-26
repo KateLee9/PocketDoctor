@@ -4,6 +4,7 @@ var FacebookStrategy = require('passport-facebook');
 //hook on sequelize
 const Sequelize = require('sequelize');
 const sequelize = new Sequelize('heroku_5b563746e9de2a7','bc3248bee2e38f', "8823eb86", {
+    host: 'us-cdbr-iron-east-01.cleardb.net',
     dialect: 'mysql',
 });
 const User = require('../models/user')(sequelize, Sequelize);
