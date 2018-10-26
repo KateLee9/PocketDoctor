@@ -1,23 +1,23 @@
 {
   "development": {
-    "username": "root",
-    "password": null,
-    "database": "PocketDoctor",
-    "host": "127.0.0.1",
+    "username": "bc3248bee2e38f",
+    "password": "8823eb86",
+    "database": "heroku_5b563746e9de2a7",
+    "host": "us-cdbr-iron-east-01.cleardb.net",
     "dialect": "mysql"
   },
   "test": {
-    "username": "root",
-    "password": null,
-    "database": "PocketDoctor",
-    "host": "127.0.0.1",
+    "username": "bc3248bee2e38f",
+    "password": "8823eb86",
+    "database": "heroku_5b563746e9de2a7",
+    "host": "us-cdbr-iron-east-01.cleardb.net",
     "dialect": "mysql"
   },
   "production": {
-    "username": "root",
-    "password": null,
-    "database": "PocketDoctor",
-    "host": "127.0.0.1",
+    "username": "bc3248bee2e38f",
+    "password": "8823eb86",
+    "database": "heroku_5b563746e9de2a7",
+    "host": "us-cdbr-iron-east-01.cleardb.net ",
     "dialect": "mysql"
   },
   "facebook": {
