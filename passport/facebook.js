@@ -20,17 +20,17 @@ passport.use(new FacebookStrategy({
     },
     function (accessToken, refreshToken, profile, cb,done) {
 
-        User.findOrCreate({ facebook: profile.id }, function (err, user) {
-            return cb(err, user);
-        });
+        // User.findOrCreate({ facebook: profile.id }, function (err, user) {
+        //     return cb(err, user);
+        // });
 
-        // var values = {facebook: profile.id, name: profile.user};
-        //     User.findOrCreate({where: {facebook: profile.id}, values})
-        //         .spread((user, created) => {
-        //                 console.log(user.get({
-        //                     plain: true
-        //                 }));
-        //                 console.log(created)})
+        var values = {facebook: profile.id, name: profile.user};
+            User.findOrCreate({where: {facebook: profile.id}, values})
+                .spread((user, created) => {
+                        console.log(user.get({
+                            plain: true
+                        }));
+                        console.log(created)})
 
         // User.findOne({
         //     where: {facebook: profile.id}
