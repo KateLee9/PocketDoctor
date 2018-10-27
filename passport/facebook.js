@@ -26,7 +26,7 @@ passport.use(new FacebookStrategy({
                         console.log(user.get({
                             plain: true
                         }));
-                        console.log(created)
+                        console.log( "this is second console.log" + created);
                         console.log(JSON.stringify(profile))
                 })
 
