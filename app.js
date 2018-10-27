@@ -24,9 +24,6 @@ app.use(express.urlencoded({ extended: false }));
 // app.use(bodyParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/', indexRouter);
-app.use('/users', usersRouter);
-
 //passport middleware
 // app.use(session({
 //     secret: 'keyboard cat',
@@ -43,6 +40,10 @@ app.use('/users', usersRouter);
     app.use(bodyParser.urlencoded({ extended: false }));
     app.use(passport.initialize());
     app.use(passport.session());
+
+//adding routes
+app.use('/', indexRouter);
+app.use('/users', usersRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
