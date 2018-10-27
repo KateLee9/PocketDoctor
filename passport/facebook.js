@@ -16,7 +16,6 @@ passport.use(new FacebookStrategy({
         clientID: 1900216703426978,
         clientSecret: 'f2c2ee6069de323109cb9347fad01026',
         callbackURL: "https://kate-pocketdoctor.herokuapp.com/passport/facebook/callback",
-        // profileFields: ['id', 'displayName', 'email'],
     },
     function (accessToken, refreshToken, profile, cb,done) {
 
@@ -24,13 +23,15 @@ passport.use(new FacebookStrategy({
         //     return cb(err, user);
         // });
 
-        var values = {facebook: profile.id, name: profile.user};
-            User.findOrCreate({where: {facebook: profile.id}, values})
-                .spread((user, created) => {
-                        console.log(user.get({
-                            plain: true
-                        }));
-                        console.log(created)})
+        console.log(profile.id);
+
+        // var values = {facebook: 2 , name: profile.user};
+        //     User.findOrCreate({where: {facebook: profile.id}, values})
+        //         .spread((user, created) => {
+        //                 console.log(user.get({
+        //                     plain: true
+        //                 }));
+        //                 console.log(created)})
 
         // User.findOne({
         //     where: {facebook: profile.id}
