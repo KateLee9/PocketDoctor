@@ -29,22 +29,24 @@ passport.use(new FacebookStrategy({
                 values})
                 .spread((user, created) => {
 
-                    if (created){
-                        console.log(user.get({
-                            plain: true
-                        }));
-                        console.log(created);
-                        console.log(JSON.stringify(profile));
-                        done(null,profile);
-                    }
-                    else{
-                        console.log(user.get({
-                            plain: true
-                        }));
-                        console.log(created);
-                        console.log(JSON.stringify(profile));
-                        done(null, profile)
-                    }
+                    console.log(created);
+                    done(null,profile);
+                    // if (created){
+                    //     console.log(user.get({
+                    //         plain: true
+                    //     }));
+                    //     console.log(created);
+                    //     console.log(JSON.stringify(profile));
+                    //     done(null,profile);
+                    // }
+                    // else{
+                    //     console.log(user.get({
+                    //         plain: true
+                    //     }));
+                    //     console.log(created);
+                    //     console.log(JSON.stringify(profile));
+                    //     done(null, profile)
+                    // }
 
                 })
 
