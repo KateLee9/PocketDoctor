@@ -21,7 +21,7 @@ passport.use(new FacebookStrategy({
     function (req, accessToken, refreshToken, profile, done) {
 
         var values = {facebook: profile.id , name: profile.name};
-            User.findOrCreate({where: {facebook: profile.id}, values})
+            User.findOrCreate({where: {name: profile.name}, values})
                 .spread((user, created) => {
                         console.log(user.get({
                             plain: true
