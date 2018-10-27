@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b7d767e-0a78-446b-a199-f8102988f985" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/passport/facebook.js" beforeDir="false" afterPath="$PROJECT_DIR$/passport/facebook.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -56,10 +57,10 @@
         <counts>
           <entry key="Procfile" value="34" />
           <entry key="css" value="125" />
-          <entry key="js" value="3722" />
+          <entry key="js" value="3787" />
           <entry key="json" value="163" />
           <entry key="pug" value="674" />
-          <entry key="txt" value="611" />
+          <entry key="txt" value="631" />
           <entry key="www" value="2" />
         </counts>
       </usages-collector>
@@ -68,8 +69,8 @@
           <entry key="CSS" value="125" />
           <entry key="JSON" value="163" />
           <entry key="Jade" value="674" />
-          <entry key="JavaScript" value="3724" />
-          <entry key="PLAIN_TEXT" value="645" />
+          <entry key="JavaScript" value="3789" />
+          <entry key="PLAIN_TEXT" value="665" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages">
@@ -107,16 +108,16 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/passport/facebook.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="174">
-              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+            <state relative-caret-position="360">
+              <caret line="24" column="44" selection-start-line="24" selection-start-column="44" selection-end-line="24" selection-end-column="44" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/models/user.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="300">
@@ -153,6 +154,7 @@
       <find>passport/google</find>
       <find>/passport/google</find>
       <find>something</find>
+      <find>profile</find>
     </findStrings>
     <replaceStrings>
       <replace>/extraCSS/</replace>
@@ -191,8 +193,8 @@
         <option value="$PROJECT_DIR$/_config.js" />
         <option value="$PROJECT_DIR$/bin/www" />
         <option value="$PROJECT_DIR$/routes/index.js" />
-        <option value="$PROJECT_DIR$/passport/facebook.js" />
         <option value="$PROJECT_DIR$/models/user.js" />
+        <option value="$PROJECT_DIR$/passport/facebook.js" />
       </list>
     </option>
   </component>
@@ -587,14 +589,29 @@
       <option name="project" value="LOCAL" />
       <updated>1540625021514</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary=".">
+      <created>1540627800490</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1540627800490</updated>
+    </task>
+    <task id="LOCAL-00025" summary="add profileFields">
+      <created>1540629223702</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1540629223702</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="91255000" />
+    <option name="totallyTimeSpent" value="92496000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.30420968" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -653,9 +670,10 @@
     <MESSAGE value="minor changes in workspace" />
     <MESSAGE value="update callback url" />
     <MESSAGE value="revert back to http" />
-    <MESSAGE value="." />
     <MESSAGE value="profilefields deleted" />
-    <option name="LAST_COMMIT_MESSAGE" value="profilefields deleted" />
+    <MESSAGE value="." />
+    <MESSAGE value="add profileFields" />
+    <option name="LAST_COMMIT_MESSAGE" value="add profileFields" />
   </component>
   <component name="WindowStateProjectService">
     <state width="493" height="170" key="Git.Branch.Popup" />
@@ -858,17 +876,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/passport/facebook.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/models/user.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/passport/facebook.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="44" selection-start-line="24" selection-start-column="44" selection-end-line="24" selection-end-column="44" />
         </state>
       </provider>
     </entry>
