@@ -20,9 +20,21 @@ passport.use(new FacebookStrategy({
     },
     function (req, accessToken, refreshToken, profile, done) {
 
-        var values = {facebook: profile.id , name: profile.name};
-            User.findOrCreate({where: {name: profile.displayName}, values})
+        var values = {facebook: profile.id , name: profile.displayName};
+            User.findOrCreate({
+                where: {
+                    facebook: profile.id,
+                    name: profile.displayName,
+                },
+                values})
                 .spread((user, created) => {
+
+                    if (created){
+                        provider = profile.provider;
+                    }
+                    else{
+                        done(null, profile)
+                    }
                         console.log(user.get({
                             plain: true
                         }));
