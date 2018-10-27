@@ -27,7 +27,11 @@ passport.use(new FacebookStrategy({
                             plain: true
                         }));
                         console.log( "this is second console.log" + created);
-                        console.log(JSON.stringify(profile))
+                        console.log(JSON.stringify(profile));
+                        console.log(JSON.stringify(accessToken));
+                    console.log(JSON.stringify(refreshToken))
+
+
                 })
 
         // User.findOne({
