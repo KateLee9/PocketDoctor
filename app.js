@@ -4,8 +4,6 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var logger = require('morgan');
-var connect = require('connect');
-
 var passport = require('passport');
 var session = require('express-session');
 
@@ -13,8 +11,7 @@ var session = require('express-session');
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 
-// var app = express(); //instantiates Express assigns our app variable
-var app = connect();
+var app = express(); //instantiates Express assigns our app variable
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -38,8 +35,6 @@ app.use(session({
 }));
 app.use(passport.initialize());
 app.use(passport.session());
-
-app.use(app.router);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
