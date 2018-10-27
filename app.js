@@ -38,12 +38,11 @@ app.use('/users', usersRouter);
 
 //trial code
     app.use(express.static('public'));
-    app.use(express.cookieParser());
+    app.use(cookieParser());
     app.use(bodyParser.urlencoded({ extended: false }));
     app.use(session({ secret: 'keyboard cat' }));
     app.use(passport.initialize());
     app.use(passport.session());
-    app.use(app.router);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
