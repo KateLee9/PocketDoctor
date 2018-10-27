@@ -38,9 +38,9 @@ app.use('/users', usersRouter);
 
 //trial code
     app.use(express.static('public'));
+    app.use(session({ secret: 'keyboard cat' }));
     app.use(cookieParser());
     app.use(bodyParser.urlencoded({ extended: false }));
-    app.use(session({ secret: 'keyboard cat' }));
     app.use(passport.initialize());
     app.use(passport.session());
 
