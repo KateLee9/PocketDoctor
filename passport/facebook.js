@@ -15,27 +15,33 @@ var init = require('./init');
 passport.use(new FacebookStrategy({
         clientID: 1900216703426978,
         clientSecret: 'f2c2ee6069de323109cb9347fad01026',
-        callbackURL: "https://kate-pocketdoctor.herokuapp.com/passport/facebook/callback"
+        callbackURL: "https://kate-pocketdoctor.herokuapp.com/passport/facebook/callback",
+        profileFields: ['id', 'displayName', 'email'],
     },
     function (accessToken, refreshToken, profile, cb,done) {
 
-        var values = {facebook: profile.id, name: profile.user};
-            User.findOrCreate({where: {facebook: profile.id}, values})
-                .then(function (err,user) {
-                    return done(err, user);
-                })
-        }
+        User.findOrCreate({ facebook: profile.id }, function (err, user) {
+            return cb(err, user);
+        });
+
+        // var values = {facebook: profile.id, name: profile.user};
+        //     User.findOrCreate({where: {facebook: profile.id}, values})
+        //         .spread((user, created) => {
+        //                 console.log(user.get({
+        //                     plain: true
+        //                 }));
+        //                 console.log(created)})
 
         // User.findOne({
-        //     where: {id: profile.id}
+        //     where: {facebook: profile.id}
         // }, function (err, user) {
         //     if (err) {
         //         return done(err);
-        //     }s found... so create a new user with values from Facebook (all the profile. stuff)
+        //     } //s found... so create a new user with values from Facebook (all the profile. stuff)
         //     if (!user) {
         //         user = new User({
-        //             name: profile.displayName,
-        //             username: profile.username,
+        //             name: profile.name,
+        //             username: profile.displayName,
         //             email: profile.emails[0].value,
         //
         //             provider: 'facebook',
@@ -53,7 +59,7 @@ passport.use(new FacebookStrategy({
         //     }
         // })
 
-));
+    }));
 
 init();
 

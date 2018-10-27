@@ -24,11 +24,11 @@ router.get('/login', function(req, res, next) {
 router.get('/passport/facebook', passportFacebook.authenticate('facebook'));
 
 router.get('/passport/facebook/callback',
-    passportFacebook.authenticate('facebook', { successRedirect: '/', failureRedirect: '/login' }),
+    passportFacebook.authenticate('facebook', { failureRedirect: '/login' },
     function(req, res) {
         // Successful authentication
-        res.json(req.user);
-    });
+        res.redirect('/');
+    }));
 
 /* Google Authentication */
 // router.get('/passport/google', passportGoogle.authenticate('google', { scope: ['profile'] }));
