@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="8b7d767e-0a78-446b-a199-f8102988f985" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -40,7 +37,7 @@
           <entry key="json" value="33" />
           <entry key="pug" value="14" />
           <entry key="sql" value="2" />
-          <entry key="www" value="6" />
+          <entry key="www" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -49,7 +46,7 @@
           <entry key="JSCS" value="2" />
           <entry key="JSON" value="32" />
           <entry key="Jade" value="14" />
-          <entry key="JavaScript" value="108" />
+          <entry key="JavaScript" value="109" />
           <entry key="PLAIN_TEXT" value="4" />
           <entry key="SQL" value="2" />
           <entry key="tsconfig" value="1" />
@@ -59,10 +56,10 @@
         <counts>
           <entry key="Procfile" value="34" />
           <entry key="css" value="125" />
-          <entry key="js" value="4074" />
+          <entry key="js" value="4102" />
           <entry key="json" value="163" />
           <entry key="pug" value="674" />
-          <entry key="txt" value="683" />
+          <entry key="txt" value="711" />
           <entry key="www" value="2" />
         </counts>
       </usages-collector>
@@ -71,8 +68,8 @@
           <entry key="CSS" value="125" />
           <entry key="JSON" value="163" />
           <entry key="Jade" value="674" />
-          <entry key="JavaScript" value="4076" />
-          <entry key="PLAIN_TEXT" value="717" />
+          <entry key="JavaScript" value="4104" />
+          <entry key="PLAIN_TEXT" value="745" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages">
@@ -104,8 +101,17 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="89">
-              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+            <state relative-caret-position="270">
+              <caret line="33" column="23" selection-start-line="33" selection-start-column="23" selection-end-line="33" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bin/www">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-697">
+              <caret line="20" selection-start-line="20" selection-end-line="20" />
             </state>
           </provider>
         </entry>
@@ -185,6 +191,7 @@
       <find>something</find>
       <find>profile</find>
       <find>passport.ini</find>
+      <find>app.rou</find>
     </findStrings>
     <replaceStrings>
       <replace>/extraCSS/</replace>
@@ -710,11 +717,25 @@
       <option name="project" value="LOCAL" />
       <updated>1540648268532</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="Install connect">
+      <created>1540650849954</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1540650849954</updated>
+    </task>
+    <task id="LOCAL-00038" summary="Install connect">
+      <created>1540652053556</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1540652053556</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="97573000" />
+    <option name="totallyTimeSpent" value="98532000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -783,7 +804,8 @@
     <MESSAGE value="findOrCreate updated" />
     <MESSAGE value="path changed" />
     <MESSAGE value="configure routes" />
-    <option name="LAST_COMMIT_MESSAGE" value="configure routes" />
+    <MESSAGE value="Install connect" />
+    <option name="LAST_COMMIT_MESSAGE" value="Install connect" />
   </component>
   <component name="WindowStateProjectService">
     <state width="493" height="170" key="Git.Branch.Popup" />
@@ -934,13 +956,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bin/www">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/controllers/user.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -993,10 +1008,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/bin/www">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-697">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="89">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        <state relative-caret-position="270">
+          <caret line="33" column="23" selection-start-line="33" selection-start-column="23" selection-end-line="33" selection-end-column="23" />
         </state>
       </provider>
     </entry>

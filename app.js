@@ -20,21 +20,32 @@ app.set('view engine', 'pug');
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
-app.use(cookieParser());
-app.use(bodyParser());
+// app.use(cookieParser());
+// app.use(bodyParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 
 //passport middleware
-app.use(session({
-    secret: 'keyboard cat',
-    resave: true,
-    saveUninitialized: true
-}));
-app.use(passport.initialize());
-app.use(passport.session());
+// app.use(session({
+//     secret: 'keyboard cat',
+//     resave: true,
+//     saveUninitialized: true
+// }));
+// app.use(passport.initialize());
+// app.use(passport.session());
+
+//trial code
+app.configure(function() {
+    app.use(express.static('public'));
+    app.use(express.cookieParser());
+    app.use(express.bodyParser());
+    app.use(express.session({ secret: 'keyboard cat' }));
+    app.use(passport.initialize());
+    app.use(passport.session());
+    app.use(app.router);
+});
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
