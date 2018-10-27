@@ -30,7 +30,7 @@ passport.use(new FacebookStrategy({
                 .spread((user, created) => {
 
                     console.log(created);
-                    done(null,profile);
+                    return done(null,profile);
                     // if (created){
                     //     console.log(user.get({
                     //         plain: true
