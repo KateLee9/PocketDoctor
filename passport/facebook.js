@@ -27,7 +27,7 @@ passport.use(new FacebookStrategy({
                             plain: true
                         }));
                         console.log(created)
-                        console.log(profile.id)
+                        console.log(JSON.stringify(profile))
                 })
 
         // User.findOne({
