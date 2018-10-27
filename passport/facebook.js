@@ -16,9 +16,10 @@ passport.use(new FacebookStrategy({
         clientID: 1900216703426978,
         clientSecret: 'f2c2ee6069de323109cb9347fad01026',
         callbackURL: "https://kate-pocketdoctor.herokuapp.com/passport/facebook/callback",
-        profileFields: ['id', 'name', 'email']
+        profileFields: ['id', 'name', 'email'],
+        passReqToCallback: true
     },
-    function (accessToken, refreshToken, profile, cb,done) {
+    function (req, accessToken, refreshToken, profile, done) {
 
         var values = {facebook: profile.id , name: profile.user};
             User.findOrCreate({where: {facebook: profile.id}, values})
@@ -29,9 +30,6 @@ passport.use(new FacebookStrategy({
                         console.log( "this is second console.log" + created);
                         console.log(JSON.stringify(profile));
                         console.log(JSON.stringify(accessToken));
-                    console.log(JSON.stringify(refreshToken))
-
-
                 })
 
         // User.findOne({

@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8b7d767e-0a78-446b-a199-f8102988f985" name="Default Changelist" comment="" />
+    <list default="true" id="8b7d767e-0a78-446b-a199-f8102988f985" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/passport/facebook.js" beforeDir="false" afterPath="$PROJECT_DIR$/passport/facebook.js" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -54,7 +57,7 @@
         <counts>
           <entry key="Procfile" value="34" />
           <entry key="css" value="125" />
-          <entry key="js" value="3788" />
+          <entry key="js" value="3858" />
           <entry key="json" value="163" />
           <entry key="pug" value="674" />
           <entry key="txt" value="632" />
@@ -66,7 +69,7 @@
           <entry key="CSS" value="125" />
           <entry key="JSON" value="163" />
           <entry key="Jade" value="674" />
-          <entry key="JavaScript" value="3790" />
+          <entry key="JavaScript" value="3860" />
           <entry key="PLAIN_TEXT" value="666" />
         </counts>
       </usages-collector>
@@ -108,8 +111,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/passport/facebook.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-172">
-              <caret line="29" column="47" lean-forward="true" selection-start-line="29" selection-start-column="47" selection-end-line="29" selection-end-column="47" />
+            <state relative-caret-position="177">
+              <caret line="20" column="52" selection-start-line="20" selection-start-column="52" selection-end-line="20" selection-end-column="52" />
             </state>
           </provider>
         </entry>
@@ -607,14 +610,36 @@
       <option name="project" value="LOCAL" />
       <updated>1540629508389</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary=".">
+      <created>1540629783053</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1540629783053</updated>
+    </task>
+    <task id="LOCAL-00028" summary=".">
+      <created>1540629825002</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1540629825002</updated>
+    </task>
+    <task id="LOCAL-00029" summary=".">
+      <created>1540629995327</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1540629995327</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="92658000" />
+    <option name="totallyTimeSpent" value="93145000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.30420968" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -888,8 +913,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/passport/facebook.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-172">
-          <caret line="29" column="47" lean-forward="true" selection-start-line="29" selection-start-column="47" selection-end-line="29" selection-end-column="47" />
+        <state relative-caret-position="177">
+          <caret line="20" column="52" selection-start-line="20" selection-start-column="52" selection-end-line="20" selection-end-column="52" />
         </state>
       </provider>
     </entry>
