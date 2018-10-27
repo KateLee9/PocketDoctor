@@ -30,16 +30,22 @@ passport.use(new FacebookStrategy({
                 .spread((user, created) => {
 
                     if (created){
-                        provider = profile.provider;
-                    }
-                    else{
-                        done(null, profile)
-                    }
                         console.log(user.get({
                             plain: true
                         }));
                         console.log(created);
                         console.log(JSON.stringify(profile));
+                        done(null,profile);
+                    }
+                    else{
+                        console.log(user.get({
+                            plain: true
+                        }));
+                        console.log(created);
+                        console.log(JSON.stringify(profile));
+                        done(null, profile)
+                    }
+
                 })
 
         // User.findOne({
