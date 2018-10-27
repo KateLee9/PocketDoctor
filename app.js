@@ -37,7 +37,6 @@ app.use('/users', usersRouter);
 // app.use(passport.session());
 
 //trial code
-app.configure(function() {
     app.use(express.static('public'));
     app.use(express.cookieParser());
     app.use(express.bodyParser());
@@ -45,7 +44,6 @@ app.configure(function() {
     app.use(passport.initialize());
     app.use(passport.session());
     app.use(app.router);
-});
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
