@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="8b7d767e-0a78-446b-a199-f8102988f985" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/passport/facebook.js" beforeDir="false" afterPath="$PROJECT_DIR$/passport/facebook.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -35,7 +34,7 @@
           <entry key="gitignore" value="1" />
           <entry key="js" value="101" />
           <entry key="jscsrc" value="2" />
-          <entry key="json" value="31" />
+          <entry key="json" value="33" />
           <entry key="pug" value="14" />
           <entry key="sql" value="2" />
           <entry key="www" value="6" />
@@ -45,7 +44,7 @@
         <counts>
           <entry key="CSS" value="7" />
           <entry key="JSCS" value="2" />
-          <entry key="JSON" value="30" />
+          <entry key="JSON" value="32" />
           <entry key="Jade" value="14" />
           <entry key="JavaScript" value="107" />
           <entry key="PLAIN_TEXT" value="4" />
@@ -57,10 +56,10 @@
         <counts>
           <entry key="Procfile" value="34" />
           <entry key="css" value="125" />
-          <entry key="js" value="3881" />
+          <entry key="js" value="4004" />
           <entry key="json" value="163" />
           <entry key="pug" value="674" />
-          <entry key="txt" value="634" />
+          <entry key="txt" value="655" />
           <entry key="www" value="2" />
         </counts>
       </usages-collector>
@@ -69,8 +68,8 @@
           <entry key="CSS" value="125" />
           <entry key="JSON" value="163" />
           <entry key="Jade" value="674" />
-          <entry key="JavaScript" value="3883" />
-          <entry key="PLAIN_TEXT" value="668" />
+          <entry key="JavaScript" value="4006" />
+          <entry key="PLAIN_TEXT" value="689" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages">
@@ -87,11 +86,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/routes/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="28" column="36" lean-forward="true" selection-start-line="28" selection-start-column="36" selection-end-line="28" selection-end-column="36" />
+            <state relative-caret-position="229">
+              <caret line="26" column="47" lean-forward="true" selection-start-line="26" selection-start-column="47" selection-end-line="26" selection-end-column="47" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -108,11 +107,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/passport/facebook.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="218">
-              <caret line="23" column="68" lean-forward="true" selection-start-line="23" selection-start-column="68" selection-end-line="23" selection-end-column="68" />
+            <state relative-caret-position="353">
+              <caret line="38" column="39" lean-forward="true" selection-start-line="38" selection-start-column="39" selection-end-line="38" selection-end-column="39" />
             </state>
           </provider>
         </entry>
@@ -122,6 +121,24 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="300">
               <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="29" lean-forward="true" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/config.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="16" column="33" lean-forward="true" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -645,11 +662,32 @@
       <option name="project" value="LOCAL" />
       <updated>1540631094185</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary=".">
+      <created>1540631513385</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1540631513385</updated>
+    </task>
+    <task id="LOCAL-00033" summary=".">
+      <created>1540631624637</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1540631624637</updated>
+    </task>
+    <task id="LOCAL-00034" summary="findOrCreate updated">
+      <created>1540646759464</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1540646759464</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="94012000" />
+    <option name="totallyTimeSpent" value="95714000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -715,7 +753,8 @@
     <MESSAGE value="profilefields deleted" />
     <MESSAGE value="add profileFields" />
     <MESSAGE value="." />
-    <option name="LAST_COMMIT_MESSAGE" value="." />
+    <MESSAGE value="findOrCreate updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="findOrCreate updated" />
   </component>
   <component name="WindowStateProjectService">
     <state width="493" height="170" key="Git.Branch.Popup" />
@@ -852,13 +891,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/data-dump.sql" />
     <entry file="file://$PROJECT_DIR$/dump.sql" />
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="29" lean-forward="true" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_config.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -887,27 +919,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="36" lean-forward="true" selection-start-line="28" selection-start-column="36" selection-end-line="28" selection-end-column="36" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/bin/www">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="20" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/config.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="14" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
         </state>
       </provider>
     </entry>
@@ -925,10 +940,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="29" lean-forward="true" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/config.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="33" lean-forward="true" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/passport/facebook.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="23" column="68" lean-forward="true" selection-start-line="23" selection-start-column="68" selection-end-line="23" selection-end-column="68" />
+        <state relative-caret-position="353">
+          <caret line="38" column="39" lean-forward="true" selection-start-line="38" selection-start-column="39" selection-end-line="38" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="229">
+          <caret line="26" column="47" lean-forward="true" selection-start-line="26" selection-start-column="47" selection-end-line="26" selection-end-column="47" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
