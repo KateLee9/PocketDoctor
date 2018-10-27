@@ -16,7 +16,7 @@ passport.use(new FacebookStrategy({
         clientID: 1900216703426978,
         clientSecret: 'f2c2ee6069de323109cb9347fad01026',
         callbackURL: "https://kate-pocketdoctor.herokuapp.com/passport/facebook/callback",
-        profileFields: ['id', 'displayName', 'email'],
+        // profileFields: ['id', 'displayName', 'email'],
     },
     function (accessToken, refreshToken, profile, cb,done) {
 
